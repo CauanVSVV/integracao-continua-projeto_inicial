@@ -30,7 +30,7 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
-      environment:
+    environment:
       - DB_HOST=localhost
       - DB_USER=root
       - DB_PASSWORD=root
